@@ -28,12 +28,11 @@ require (
 	github.com/google/go-containerregistry v0.6.0
 	github.com/google/go-github/v33 v33.0.0
 	github.com/google/wire v0.4.0
-	github.com/hashicorp/go-getter v1.5.2
+	github.com/hashicorp/go-getter v1.6.1
 	github.com/huandu/xstrings v1.3.2 // indirect
 	github.com/knqyf263/go-apk-version v0.0.0-20200609155635-041fdbb8563f
 	github.com/knqyf263/go-deb-version v0.0.0-20190517075300-09fca494f03d
 	github.com/knqyf263/go-rpm-version v0.0.0-20170716094938-74609b86c936
-	github.com/kylelemons/godebug v1.1.0
 	github.com/masahiro331/go-mvn-version v0.0.0-20210429150710-d3157d602a08
 	github.com/mitchellh/copystructure v1.1.1 // indirect
 	github.com/olekukonko/tablewriter v0.0.5
