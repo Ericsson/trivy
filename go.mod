@@ -81,7 +81,7 @@ require (
 	github.com/opencontainers/image-spec v1.1.0-rc5
 	github.com/openvex/go-vex v0.2.5
 	github.com/owenrumney/go-sarif/v2 v2.3.0
-	github.com/package-url/packageurl-go v0.1.2
+	github.com/package-url/packageurl-go v0.1.3
 	github.com/quasilyte/go-ruleguard/dsl v0.3.22
 	github.com/samber/lo v1.38.1
 	github.com/saracen/walker v0.1.3
