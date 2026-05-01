@@ -57,7 +57,7 @@ jobs:
       # This ensures we compare the actual merge result with the base branch,
       # avoiding false positives when PR is not rebased with latest main
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           ref: refs/pull/${{ github.event.pull_request.number }}/merge
 
@@ -98,7 +98,7 @@ jobs:
 
       - name: Add apidiff label
         if: ${{ steps.apidiff.outputs.semver-type == 'major' }}
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const label = 'apidiff';
@@ -111,7 +111,7 @@ jobs:
 
       - name: Comment API diff
         if: ${{ steps.apidiff.outputs.semver-type == 'major' }}
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           APIDIFF_OUTPUT: ${{ steps.apidiff.outputs.output }}
           SEMVER_TYPE: ${{ steps.apidiff.outputs.semver-type }}
@@ -160,7 +160,7 @@ jobs:
       # Attempt to request the premium reviewers; needs org-scoped token because GITHUB_TOKEN lacks read:org.
       - name: Request trivy-premium review
         if: ${{ steps.apidiff.outputs.semver-type == 'major' }}
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.ORG_REPO_TOKEN }}
           script: |
