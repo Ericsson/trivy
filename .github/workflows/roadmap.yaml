@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 'kind/feature' AND 'priority/backlog' labels -> 'Backlog' column
-      - uses: actions/add-to-project@244f685bbc3b7adfa8466e08b698b5577571133e # v1.0.2
+      - uses: actions/add-to-project@5afcf98fcd03f1c2f92c3c83f58ae24323cc57fd # v2.0.0
         with:
           project-url: https://github.com/orgs/aquasecurity/projects/25
           github-token: ${{ secrets.ORG_PROJECT_TOKEN }}
@@ -28,7 +28,7 @@ jobs:
           field-values: Backlog
 
       # 'kind/feature' AND 'priority/important-longterm' labels -> 'Important (long-term)' column
-      - uses: actions/add-to-project@244f685bbc3b7adfa8466e08b698b5577571133e # v1.0.2
+      - uses: actions/add-to-project@5afcf98fcd03f1c2f92c3c83f58ae24323cc57fd # v2.0.0
         with:
           project-url: https://github.com/orgs/aquasecurity/projects/25
           github-token: ${{ secrets.ORG_PROJECT_TOKEN }}
@@ -45,7 +45,7 @@ jobs:
           field-values: Important (long-term)
 
       # 'kind/feature' AND 'priority/important-soon' labels -> 'Important (soon)' column
-      - uses: actions/add-to-project@244f685bbc3b7adfa8466e08b698b5577571133e # v1.0.2
+      - uses: actions/add-to-project@5afcf98fcd03f1c2f92c3c83f58ae24323cc57fd # v2.0.0
         with:
           project-url: https://github.com/orgs/aquasecurity/projects/25
           github-token: ${{ secrets.ORG_PROJECT_TOKEN }}
@@ -62,7 +62,7 @@ jobs:
           field-values: Important (soon)
 
       # 'kind/feature' AND 'priority/critical-urgent' labels -> 'Urgent' column
-      - uses: actions/add-to-project@244f685bbc3b7adfa8466e08b698b5577571133e # v1.0.2
+      - uses: actions/add-to-project@5afcf98fcd03f1c2f92c3c83f58ae24323cc57fd # v2.0.0
         with:
           project-url: https://github.com/orgs/aquasecurity/projects/25
           github-token: ${{ secrets.ORG_PROJECT_TOKEN }}
